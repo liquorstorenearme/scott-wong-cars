@@ -818,12 +818,40 @@ strong { font-weight: 600; }
 
 /* ---- Responsive ---- */
 @media (max-width: 768px) {
-  .nav { padding: 0 20px; }
+  .nav { padding: 0 16px; }
   .nav-links { display: none; }
+  .logo-text { font-size: 0.7rem; }
+
+  .hero {
+    padding: 100px 20px 60px;
+    min-height: auto;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
 
   .hero-stats {
-    flex-direction: column;
-    gap: 24px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px 40px;
+    margin-top: 48px;
+  }
+
+  .stat-number { font-size: 2rem; }
+
+  .configurator {
+    padding: 80px 20px;
+  }
+
+  .q-title {
+    font-size: 1.4rem;
+    margin-bottom: 28px;
+  }
+
+  .option {
+    padding: 16px 18px;
   }
 
   .fleet-grid,
@@ -839,8 +867,40 @@ strong { font-weight: 600; }
     grid-template-columns: 1fr 1fr;
   }
 
+  .fleet-card {
+    padding: 24px;
+  }
+
   .result-card {
     padding: 24px;
+  }
+
+  .result-car-name {
+    font-size: 1.5rem;
+  }
+
+  .result-specs {
+    gap: 8px;
+  }
+
+  .damage-row {
+    font-size: 0.8rem;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .damage-row .value {
+    text-align: right;
+  }
+
+  .damage-total {
+    font-size: 1rem;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .damage-total-num {
+    font-size: 1.2rem;
   }
 
   .result-actions {
@@ -851,10 +911,53 @@ strong { font-weight: 600; }
     flex-direction: column;
     gap: 12px;
   }
+
+  .fin-num {
+    font-size: 1.6rem;
+  }
+
+  .section-header {
+    margin-bottom: 40px;
+  }
+
+  .fleet, .financials {
+    padding: 80px 20px;
+  }
+
+  .what-instead h3 {
+    font-size: 1.3rem;
+  }
+
+  .footer {
+    padding: 48px 20px;
+  }
 }
 
 @media (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-stats {
+    gap: 20px 32px;
+  }
+
+  .stat-number { font-size: 1.8rem; }
+  .stat-label { font-size: 0.6rem; }
+
   .instead-grid {
     grid-template-columns: 1fr;
+  }
+
+  .fleet-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .result-specs span {
+    font-size: 0.65rem;
+  }
+
+  .progress-steps {
+    display: none;
   }
 }
