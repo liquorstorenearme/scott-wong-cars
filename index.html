@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scott Wong Automotive — Configure Your Next Regret</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <span class="logo-sw">SW</span>
+        <span class="logo-text">Scott Wong Automotive</span>
+      </div>
+      <div class="nav-links">
+        <a href="#configurator">Configure</a>
+        <a href="#fleet">Current Fleet</a>
+        <a href="#financials">Financials</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-eyebrow">The Definitive Automotive Experience</p>
+      <h1 class="hero-title">Configure Your<br>Next Regret.</h1>
+      <p class="hero-subtitle">A bespoke vehicle selection experience tailored to the unique financial recklessness of <strong>Scott Wong</strong>.</p>
+      <a href="#configurator" class="btn btn-primary">Begin Configuration</a>
+      <p class="hero-disclaimer">* No credit scores were consulted in the making of this tool.</p>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-number">2</span>
+        <span class="stat-label">Vehicles Owned</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">2</span>
+        <span class="stat-label">Parents' Cars Borrowed</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">3</span>
+        <span class="stat-label">Engines (1 car)</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">0</span>
+        <span class="stat-label">Lessons Learned</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONFIGURATOR -->
+  <section id="configurator" class="configurator">
+    <div class="section-header">
+      <p class="section-eyebrow">Vehicle Configurator</p>
+      <h2>Build Your Next Bad Decision</h2>
+      <p class="section-sub">Answer a few questions. We'll handle the financial irresponsibility.</p>
+    </div>
+
+    <div class="config-wrapper">
+      <!-- Progress Bar -->
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+        <div class="progress-steps">
+          <span class="step active" data-step="1">01</span>
+          <span class="step" data-step="2">02</span>
+          <span class="step" data-step="3">03</span>
+          <span class="step" data-step="4">04</span>
+          <span class="step" data-step="5">05</span>
+        </div>
+      </div>
+
+      <!-- Questions -->
+      <div class="questions-container" id="questionsContainer">
+
+        <!-- Q1 -->
+        <div class="question active" data-question="1">
+          <h3 class="q-label">01 — Budget</h3>
+          <h2 class="q-title">What's your budget for this vehicle?</h2>
+          <div class="options">
+            <button class="option" data-value="sensible">
+              <span class="option-title">Under $40,000</span>
+              <span class="option-desc">Who are we kidding? Scott has never clicked this option in his life.</span>
+            </button>
+            <button class="option" data-value="delusional">
+              <span class="option-title">$40,000 – $70,000</span>
+              <span class="option-desc">"Reasonable" — a word Scott uses loosely</span>
+            </button>
+            <button class="option" data-value="dangerous">
+              <span class="option-title">$70,000 – $120,000</span>
+              <span class="option-desc">The sweet spot between bad idea and terrible idea</span>
+            </button>
+            <button class="option" data-value="unhinged">
+              <span class="option-title">$120,000 – $200,000</span>
+              <span class="option-desc">Money is a construct and Scott is deconstructing it</span>
+            </button>
+            <button class="option" data-value="supercar">
+              <span class="option-title">$200,000+</span>
+              <span class="option-desc">At this point just light the money on fire. Same warmth, less depreciation.</span>
+            </button>
+            <button class="option" data-value="scott">
+              <span class="option-title">Budget?</span>
+              <span class="option-desc">Scott doesn't believe in budgets. Budgets believe in Scott.</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="question" data-question="2">
+          <h3 class="q-label">02 — Purpose</h3>
+          <h2 class="q-title">What will you use this car for?</h2>
+          <div class="options">
+            <button class="option" data-value="daily">
+              <span class="option-title">Daily Driver</span>
+              <span class="option-desc">"Daily" as in it sits in the garage daily</span>
+            </button>
+            <button class="option" data-value="track">
+              <span class="option-title">Track Weapon</span>
+              <span class="option-desc">Will go to the track once, then get ceramic coated</span>
+            </button>
+            <button class="option" data-value="flex">
+              <span class="option-title">Cars & Coffee Appearances</span>
+              <span class="option-desc">The most honest answer on this page</span>
+            </button>
+            <button class="option" data-value="garage">
+              <span class="option-title">Garage Art</span>
+              <span class="option-desc">A $100K screensaver you can sit in</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="question" data-question="3">
+          <h3 class="q-label">03 — Reliability</h3>
+          <h2 class="q-title">How important is reliability to you?</h2>
+          <div class="options">
+            <button class="option" data-value="cope">
+              <span class="option-title">Very Important</span>
+              <span class="option-desc">*Laughs in third GT350 engine*</span>
+            </button>
+            <button class="option" data-value="denial">
+              <span class="option-title">Somewhat Important</span>
+              <span class="option-desc">Scott's mechanic just bought a boat. Guess why.</span>
+            </button>
+            <button class="option" data-value="honest">
+              <span class="option-title">Not a Priority</span>
+              <span class="option-desc">Finally, some self-awareness</span>
+            </button>
+            <button class="option" data-value="embrace">
+              <span class="option-title">What's Reliability?</span>
+              <span class="option-desc">This is the most Scott Wong answer possible</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="question" data-question="4">
+          <h3 class="q-label">04 — Current Fleet Assessment</h3>
+          <h2 class="q-title">How do you feel about your current cars?</h2>
+          <div class="options">
+            <button class="option" data-value="love">
+              <span class="option-title">I love them both</span>
+              <span class="option-desc">Then why are you here, Scott?</span>
+            </button>
+            <button class="option" data-value="bored">
+              <span class="option-title">I need something new</span>
+              <span class="option-desc">The GT350 is on engine #3 and you're bored?</span>
+            </button>
+            <button class="option" data-value="more">
+              <span class="option-title">I don't have enough cars</span>
+              <span class="option-desc">There it is</span>
+            </button>
+            <button class="option" data-value="replace">
+              <span class="option-title">One of them has to go</span>
+              <span class="option-desc">We both know nothing is leaving that garage</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="question" data-question="5">
+          <h3 class="q-label">05 — Self-Reflection</h3>
+          <h2 class="q-title">When you buy this car, will it be your last?</h2>
+          <div class="options">
+            <button class="option" data-value="lie1">
+              <span class="option-title">Yes, absolutely</span>
+              <span class="option-desc">You said that about the GT350. And the Type S.</span>
+            </button>
+            <button class="option" data-value="lie2">
+              <span class="option-title">Probably</span>
+              <span class="option-desc">Narrator: It was not.</span>
+            </button>
+            <button class="option" data-value="lie3">
+              <span class="option-title">I'll think about it</span>
+              <span class="option-desc">He will not think about it</span>
+            </button>
+            <button class="option" data-value="truth">
+              <span class="option-title">No</span>
+              <span class="option-desc">Respect</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <div class="config-nav" id="configNav" style="display:none;">
+        <button class="btn btn-ghost" id="prevBtn">Back</button>
+        <button class="btn btn-primary" id="nextBtn">Continue</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULT -->
+  <section id="result" class="result" style="display:none;">
+    <div class="result-inner">
+      <p class="section-eyebrow">Your Configuration Is Complete</p>
+      <h2 class="result-title" id="resultTitle"></h2>
+      <p class="result-tagline" id="resultTagline"></p>
+
+      <div class="result-card">
+        <div class="result-car-name" id="resultCar"></div>
+        <div class="result-specs" id="resultSpecs"></div>
+        <div class="damage-report">
+          <h3>Financial Damage Report</h3>
+          <div class="damage-grid" id="damageGrid"></div>
+          <div class="damage-total">
+            <span>Total Estimated Regret</span>
+            <span class="damage-total-num" id="damageTotal"></span>
+          </div>
+        </div>
+        <div class="instead" id="insteadSection"></div>
+      </div>
+
+      <div class="result-actions">
+        <button class="btn btn-primary" id="reconfigureBtn">Reconfigure (You Will)</button>
+        <button class="btn btn-ghost" id="sendBtn">Send to Scott</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CURRENT FLEET -->
+  <section id="fleet" class="fleet">
+    <div class="section-header">
+      <p class="section-eyebrow">Current Portfolio</p>
+      <h2>The Wong Collection</h2>
+      <p class="section-sub">An evolving monument to questionable financial decisions.</p>
+    </div>
+
+    <div class="fleet-grid">
+      <div class="fleet-card">
+        <div class="fleet-card-header">
+          <span class="fleet-tag tag-danger">High Risk Asset</span>
+        </div>
+        <h3>Ford Shelby GT350</h3>
+        <p class="fleet-year">The One That Keeps Breaking</p>
+        <div class="fleet-stats">
+          <div class="fleet-stat">
+            <span class="fleet-stat-num" id="engineCount">3</span>
+            <span class="fleet-stat-label">Engines & Counting</span>
+          </div>
+          <div class="fleet-stat">
+            <span class="fleet-stat-num">526</span>
+            <span class="fleet-stat-label">HP (When Running)</span>
+          </div>
+          <div class="fleet-stat">
+            <span class="fleet-stat-num">8,250</span>
+            <span class="fleet-stat-label">RPM Voodoo Redline</span>
+          </div>
+        </div>
+        <div class="engine-timeline">
+          <h4>Engine History</h4>
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="timeline-dot dead"></span>
+              <div>
+                <strong>Engine #1</strong>
+                <p>Cause of death: Lived its life a quarter mile at a time. Rest in peace.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-dot dead"></span>
+              <div>
+                <strong>Engine #2</strong>
+                <p>Cause of death: Also chose violence. Gone but not forgotten.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-dot alive"></span>
+              <div>
+                <strong>Engine #3</strong>
+                <p>Status: Alive. For now. The voodoo engine giveth and the voodoo engine taketh away.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fleet-health">
+          <span>Mechanical Health</span>
+          <div class="health-bar">
+            <div class="health-fill" style="width: 33%"></div>
+          </div>
+          <span class="health-label">Critical — Engine #3 is living on borrowed time</span>
+        </div>
+      </div>
+
+      <div class="fleet-card">
+        <div class="fleet-card-header">
+          <span class="fleet-tag tag-stable">Suspiciously Stable</span>
+        </div>
+        <h3>Acura Integra Type S</h3>
+        <p class="fleet-year">The One That Actually Works</p>
+        <div class="fleet-stats">
+          <div class="fleet-stat">
+            <span class="fleet-stat-num">1</span>
+            <span class="fleet-stat-label">Engine (Original!)</span>
+          </div>
+          <div class="fleet-stat">
+            <span class="fleet-stat-num">320</span>
+            <span class="fleet-stat-label">HP (Consistently)</span>
+          </div>
+          <div class="fleet-stat">
+            <span class="fleet-stat-num">0</span>
+            <span class="fleet-stat-label">Nervous Breakdowns</span>
+          </div>
+        </div>
+        <div class="fleet-health">
+          <span>Mechanical Health</span>
+          <div class="health-bar">
+            <div class="health-fill healthy" style="width: 95%"></div>
+          </div>
+          <span class="health-label">Excellent — It's Honda. Of course it works.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-header" style="margin-top: 80px;">
+      <p class="section-eyebrow">Actual Daily Drivers</p>
+      <h2>What Scott Actually Drives</h2>
+      <p class="section-sub">Because the GT350 is always in the shop, Scott's real fleet is his parents' cars.</p>
+    </div>
+
+    <div class="fleet-grid">
+      <div class="fleet-card">
+        <div class="fleet-card-header">
+          <span class="fleet-tag tag-daily">Dad's Car</span>
+        </div>
+        <h3>Toyota Prius (1st Gen)</h3>
+        <p class="fleet-year">The Car Scott Drives More Than His GT350</p>
+        <div class="fleet-stats">
+          <div class="fleet-stat">
+            <span class="fleet-stat-num">1</span>
+            <span class="fleet-stat-label">Engine (25+ Years Old)</span>
+          </div>
+          <div class="fleet-stat">
+            <span class="fleet-stat-num">70</span>
+            <span class="fleet-stat-label">HP (All of Them)</span>
+          </div>
+          <div class="fleet-stat">
+            <span class="fleet-stat-num">50+</span>
+            <span class="fleet-stat-label">MPG (Scott's Best Car)</span>
+          </div>
+        </div>
+        <div class="fleet-health">
+          <span>Mechanical Health</span>
+          <div class="health-bar">
+            <div class="health-fill healthy" style="width: 85%"></div>
+          </div>
+          <span class="health-label">Outlived 2 Voodoo engines. Older than some of Scott's friends. Still running.</span>
+        </div>
+      </div>
+
+      <div class="fleet-card">
+        <div class="fleet-card-header">
+          <span class="fleet-tag tag-daily">Mom's Car</span>
+        </div>
+        <h3>Toyota Camry</h3>
+        <p class="fleet-year">The Backup to the Backup</p>
+        <div class="fleet-stats">
+          <div class="fleet-stat">
+            <span class="fleet-stat-num">1</span>
+            <span class="fleet-stat-label">Engine (Original, Obviously)</span>
+          </div>
+          <div class="fleet-stat">
+            <span class="fleet-stat-num">203</span>
+            <span class="fleet-stat-label">HP (More Reliable Than 526)</span>
+          </div>
+          <div class="fleet-stat">
+            <span class="fleet-stat-num">0</span>
+            <span class="fleet-stat-label">Engine Replacements Ever</span>
+          </div>
+        </div>
+        <div class="fleet-health">
+          <span>Mechanical Health</span>
+          <div class="health-bar">
+            <div class="health-fill healthy" style="width: 98%"></div>
+          </div>
+          <span class="health-label">It's a Camry. It will outlive the sun.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINANCIALS -->
+  <section id="financials" class="financials">
+    <div class="section-header">
+      <p class="section-eyebrow">Portfolio Analysis</p>
+      <h2>The Numbers Scott Doesn't Want to See</h2>
+    </div>
+
+    <div class="fin-grid">
+      <div class="fin-card">
+        <span class="fin-label">Estimated Total Automotive Spend</span>
+        <span class="fin-num" id="totalSpend">$0</span>
+        <span class="fin-note">Includes 3 engines worth of "character building"</span>
+      </div>
+      <div class="fin-card">
+        <span class="fin-label">Cost Per Engine</span>
+        <span class="fin-num">~$8,000</span>
+        <span class="fin-note">A subscription service at this point</span>
+      </div>
+      <div class="fin-card">
+        <span class="fin-label">Mechanic's Retirement Fund</span>
+        <span class="fin-num">Fully Funded</span>
+        <span class="fin-note">Scott is that man's best customer</span>
+      </div>
+      <div class="fin-card">
+        <span class="fin-label">Days Since Last Car Purchase</span>
+        <span class="fin-num" id="daysSince">47</span>
+        <span class="fin-note">The itch is getting stronger</span>
+      </div>
+    </div>
+
+    <div class="what-instead">
+      <h3>What Scott Could Have Instead</h3>
+      <p class="section-sub">A selection of things the combined automotive budget could have purchased.</p>
+      <div class="instead-grid">
+        <div class="instead-item">
+          <span class="instead-emoji">&#127968;</span>
+          <span class="instead-title">Down Payment on a House</span>
+          <span class="instead-desc">Equity that doesn't need an oil change</span>
+        </div>
+        <div class="instead-item">
+          <span class="instead-emoji">&#127796;</span>
+          <span class="instead-title">327 Round-Trip Flights to Hawaii</span>
+          <span class="instead-desc">But would they be flat-plane crank?</span>
+        </div>
+        <div class="instead-item">
+          <span class="instead-emoji">&#128142;</span>
+          <span class="instead-title">1 Engagement Ring</span>
+          <span class="instead-desc">If anyone would still have him after this</span>
+        </div>
+        <div class="instead-item">
+          <span class="instead-emoji">&#9981;</span>
+          <span class="instead-title">A Small Boat</span>
+          <span class="instead-desc">The only thing that depreciates faster than his cars</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-sw">SW</span>
+        <span>Scott Wong Automotive</span>
+      </div>
+      <p class="footer-copy">&copy; 2026 Scott Wong Automotive. No financial advisors were consulted. No engines were spared.</p>
+      <p class="footer-fine">This is a satirical website. Scott Wong is a real person who makes real questionable car decisions. Engine count accurate at time of publication. Subject to change without notice.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
