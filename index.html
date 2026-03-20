@@ -17,11 +17,16 @@
         <span class="logo-sw">SW</span>
         <span class="logo-text">Scott Wong Automotive</span>
       </div>
-      <div class="nav-links">
-        <a href="#configurator">Configure</a>
-        <a href="#fleet">Current Fleet</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#fleet">Fleet</a>
         <a href="#financials">Financials</a>
+        <a href="#configurator">Configure</a>
       </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </nav>
 
@@ -31,7 +36,7 @@
       <p class="hero-eyebrow">The Definitive Automotive Experience</p>
       <h1 class="hero-title">Configure Your<br>Next Regret.</h1>
       <p class="hero-subtitle">A bespoke vehicle selection experience tailored to the unique financial recklessness of <strong>Scott Wong</strong>.</p>
-      <a href="#configurator" class="btn btn-primary">Begin Configuration</a>
+      <a href="#fleet" class="btn btn-primary">View the Damage</a>
       <p class="hero-disclaimer">* No credit scores were consulted in the making of this tool.</p>
     </div>
     <div class="hero-stats">
@@ -50,195 +55,6 @@
       <div class="stat">
         <span class="stat-number">0</span>
         <span class="stat-label">Lessons Learned</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONFIGURATOR -->
-  <section id="configurator" class="configurator">
-    <div class="section-header">
-      <p class="section-eyebrow">Vehicle Configurator</p>
-      <h2>Build Your Next Bad Decision</h2>
-      <p class="section-sub">Answer a few questions. We'll handle the financial irresponsibility.</p>
-    </div>
-
-    <div class="config-wrapper">
-      <!-- Progress Bar -->
-      <div class="progress-bar">
-        <div class="progress-fill" id="progressFill"></div>
-        <div class="progress-steps">
-          <span class="step active" data-step="1">01</span>
-          <span class="step" data-step="2">02</span>
-          <span class="step" data-step="3">03</span>
-          <span class="step" data-step="4">04</span>
-          <span class="step" data-step="5">05</span>
-        </div>
-      </div>
-
-      <!-- Questions -->
-      <div class="questions-container" id="questionsContainer">
-
-        <!-- Q1 -->
-        <div class="question active" data-question="1">
-          <h3 class="q-label">01 — Budget</h3>
-          <h2 class="q-title">What's your budget for this vehicle?</h2>
-          <div class="options">
-            <button class="option" data-value="sensible">
-              <span class="option-title">Under $40,000</span>
-              <span class="option-desc">Who are we kidding? Scott has never clicked this option in his life.</span>
-            </button>
-            <button class="option" data-value="delusional">
-              <span class="option-title">$40,000 – $70,000</span>
-              <span class="option-desc">"Reasonable" — a word Scott uses loosely</span>
-            </button>
-            <button class="option" data-value="dangerous">
-              <span class="option-title">$70,000 – $120,000</span>
-              <span class="option-desc">The sweet spot between bad idea and terrible idea</span>
-            </button>
-            <button class="option" data-value="unhinged">
-              <span class="option-title">$120,000 – $200,000</span>
-              <span class="option-desc">Money is a construct and Scott is deconstructing it</span>
-            </button>
-            <button class="option" data-value="supercar">
-              <span class="option-title">$200,000+</span>
-              <span class="option-desc">At this point just light the money on fire. Same warmth, less depreciation.</span>
-            </button>
-            <button class="option" data-value="scott">
-              <span class="option-title">Budget?</span>
-              <span class="option-desc">Scott doesn't believe in budgets. Budgets believe in Scott.</span>
-            </button>
-          </div>
-        </div>
-
-        <!-- Q2 -->
-        <div class="question" data-question="2">
-          <h3 class="q-label">02 — Purpose</h3>
-          <h2 class="q-title">What will you use this car for?</h2>
-          <div class="options">
-            <button class="option" data-value="daily">
-              <span class="option-title">Daily Driver</span>
-              <span class="option-desc">"Daily" as in it sits in the garage daily</span>
-            </button>
-            <button class="option" data-value="track">
-              <span class="option-title">Track Weapon</span>
-              <span class="option-desc">Will go to the track once, then get ceramic coated</span>
-            </button>
-            <button class="option" data-value="flex">
-              <span class="option-title">Cars & Coffee Appearances</span>
-              <span class="option-desc">The most honest answer on this page</span>
-            </button>
-            <button class="option" data-value="garage">
-              <span class="option-title">Garage Art</span>
-              <span class="option-desc">A $100K screensaver you can sit in</span>
-            </button>
-          </div>
-        </div>
-
-        <!-- Q3 -->
-        <div class="question" data-question="3">
-          <h3 class="q-label">03 — Reliability</h3>
-          <h2 class="q-title">How important is reliability to you?</h2>
-          <div class="options">
-            <button class="option" data-value="cope">
-              <span class="option-title">Very Important</span>
-              <span class="option-desc">*Laughs in third GT350 engine*</span>
-            </button>
-            <button class="option" data-value="denial">
-              <span class="option-title">Somewhat Important</span>
-              <span class="option-desc">Scott's mechanic just bought a boat. Guess why.</span>
-            </button>
-            <button class="option" data-value="honest">
-              <span class="option-title">Not a Priority</span>
-              <span class="option-desc">Finally, some self-awareness</span>
-            </button>
-            <button class="option" data-value="embrace">
-              <span class="option-title">What's Reliability?</span>
-              <span class="option-desc">This is the most Scott Wong answer possible</span>
-            </button>
-          </div>
-        </div>
-
-        <!-- Q4 -->
-        <div class="question" data-question="4">
-          <h3 class="q-label">04 — Current Fleet Assessment</h3>
-          <h2 class="q-title">How do you feel about your current cars?</h2>
-          <div class="options">
-            <button class="option" data-value="love">
-              <span class="option-title">I love them both</span>
-              <span class="option-desc">Then why are you here, Scott?</span>
-            </button>
-            <button class="option" data-value="bored">
-              <span class="option-title">I need something new</span>
-              <span class="option-desc">The GT350 is on engine #3 and you're bored?</span>
-            </button>
-            <button class="option" data-value="more">
-              <span class="option-title">I don't have enough cars</span>
-              <span class="option-desc">There it is</span>
-            </button>
-            <button class="option" data-value="replace">
-              <span class="option-title">One of them has to go</span>
-              <span class="option-desc">We both know nothing is leaving that garage</span>
-            </button>
-          </div>
-        </div>
-
-        <!-- Q5 -->
-        <div class="question" data-question="5">
-          <h3 class="q-label">05 — Self-Reflection</h3>
-          <h2 class="q-title">When you buy this car, will it be your last?</h2>
-          <div class="options">
-            <button class="option" data-value="lie1">
-              <span class="option-title">Yes, absolutely</span>
-              <span class="option-desc">You said that about the GT350. And the Type S.</span>
-            </button>
-            <button class="option" data-value="lie2">
-              <span class="option-title">Probably</span>
-              <span class="option-desc">Narrator: It was not.</span>
-            </button>
-            <button class="option" data-value="lie3">
-              <span class="option-title">I'll think about it</span>
-              <span class="option-desc">He will not think about it</span>
-            </button>
-            <button class="option" data-value="truth">
-              <span class="option-title">No</span>
-              <span class="option-desc">Respect</span>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Navigation -->
-      <div class="config-nav" id="configNav" style="display:none;">
-        <button class="btn btn-ghost" id="prevBtn">Back</button>
-        <button class="btn btn-primary" id="nextBtn">Continue</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- RESULT -->
-  <section id="result" class="result" style="display:none;">
-    <div class="result-inner">
-      <p class="section-eyebrow">Your Configuration Is Complete</p>
-      <h2 class="result-title" id="resultTitle"></h2>
-      <p class="result-tagline" id="resultTagline"></p>
-
-      <div class="result-card">
-        <div class="result-car-name" id="resultCar"></div>
-        <div class="result-specs" id="resultSpecs"></div>
-        <div class="damage-report">
-          <h3>Financial Damage Report</h3>
-          <div class="damage-grid" id="damageGrid"></div>
-          <div class="damage-total">
-            <span>Total Estimated Regret</span>
-            <span class="damage-total-num" id="damageTotal"></span>
-          </div>
-        </div>
-        <div class="instead" id="insteadSection"></div>
-      </div>
-
-      <div class="result-actions">
-        <button class="btn btn-primary" id="reconfigureBtn">Reconfigure (You Will)</button>
-        <button class="btn btn-ghost" id="sendBtn">Send to Scott</button>
       </div>
     </div>
   </section>
@@ -458,6 +274,202 @@
           <span class="instead-title">A Small Boat</span>
           <span class="instead-desc">The only thing that depreciates faster than his cars</span>
         </div>
+      </div>
+    </div>
+
+    <div class="cta-bridge">
+      <p class="section-eyebrow">Seen Enough?</p>
+      <h2>Ready to Make It Worse?</h2>
+      <p class="section-sub">Now that you've seen the damage, let's add to it.</p>
+      <a href="#configurator" class="btn btn-primary" style="margin-top: 32px;">Configure His Next Regret</a>
+    </div>
+  </section>
+
+  <!-- CONFIGURATOR -->
+  <section id="configurator" class="configurator">
+    <div class="section-header">
+      <p class="section-eyebrow">Vehicle Configurator</p>
+      <h2>Build Your Next Bad Decision</h2>
+      <p class="section-sub">Answer a few questions. We'll handle the financial irresponsibility.</p>
+    </div>
+
+    <div class="config-wrapper">
+      <!-- Progress Bar -->
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+        <div class="progress-steps">
+          <span class="step active" data-step="1">01</span>
+          <span class="step" data-step="2">02</span>
+          <span class="step" data-step="3">03</span>
+          <span class="step" data-step="4">04</span>
+          <span class="step" data-step="5">05</span>
+        </div>
+      </div>
+
+      <!-- Questions -->
+      <div class="questions-container" id="questionsContainer">
+
+        <!-- Q1 -->
+        <div class="question active" data-question="1">
+          <h3 class="q-label">01 — Budget</h3>
+          <h2 class="q-title">What's your budget for this vehicle?</h2>
+          <div class="options">
+            <button class="option" data-value="sensible">
+              <span class="option-title">Under $40,000</span>
+              <span class="option-desc">Who are we kidding? Scott has never clicked this option in his life.</span>
+            </button>
+            <button class="option" data-value="delusional">
+              <span class="option-title">$40,000 – $70,000</span>
+              <span class="option-desc">"Reasonable" — a word Scott uses loosely</span>
+            </button>
+            <button class="option" data-value="dangerous">
+              <span class="option-title">$70,000 – $120,000</span>
+              <span class="option-desc">The sweet spot between bad idea and terrible idea</span>
+            </button>
+            <button class="option" data-value="unhinged">
+              <span class="option-title">$120,000 – $200,000</span>
+              <span class="option-desc">Money is a construct and Scott is deconstructing it</span>
+            </button>
+            <button class="option" data-value="supercar">
+              <span class="option-title">$200,000+</span>
+              <span class="option-desc">At this point just light the money on fire. Same warmth, less depreciation.</span>
+            </button>
+            <button class="option" data-value="scott">
+              <span class="option-title">Budget?</span>
+              <span class="option-desc">Scott doesn't believe in budgets. Budgets believe in Scott.</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="question" data-question="2">
+          <h3 class="q-label">02 — Purpose</h3>
+          <h2 class="q-title">What will you use this car for?</h2>
+          <div class="options">
+            <button class="option" data-value="daily">
+              <span class="option-title">Daily Driver</span>
+              <span class="option-desc">"Daily" as in it sits in the garage daily</span>
+            </button>
+            <button class="option" data-value="track">
+              <span class="option-title">Track Weapon</span>
+              <span class="option-desc">Will go to the track once, then get ceramic coated</span>
+            </button>
+            <button class="option" data-value="flex">
+              <span class="option-title">Cars & Coffee Appearances</span>
+              <span class="option-desc">The most honest answer on this page</span>
+            </button>
+            <button class="option" data-value="garage">
+              <span class="option-title">Garage Art</span>
+              <span class="option-desc">A $100K screensaver you can sit in</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="question" data-question="3">
+          <h3 class="q-label">03 — Reliability</h3>
+          <h2 class="q-title">How important is reliability to you?</h2>
+          <div class="options">
+            <button class="option" data-value="cope">
+              <span class="option-title">Very Important</span>
+              <span class="option-desc">*Laughs in third GT350 engine*</span>
+            </button>
+            <button class="option" data-value="denial">
+              <span class="option-title">Somewhat Important</span>
+              <span class="option-desc">Scott's mechanic just bought a boat. Guess why.</span>
+            </button>
+            <button class="option" data-value="honest">
+              <span class="option-title">Not a Priority</span>
+              <span class="option-desc">Finally, some self-awareness</span>
+            </button>
+            <button class="option" data-value="embrace">
+              <span class="option-title">What's Reliability?</span>
+              <span class="option-desc">This is the most Scott Wong answer possible</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="question" data-question="4">
+          <h3 class="q-label">04 — Current Fleet Assessment</h3>
+          <h2 class="q-title">How do you feel about your current cars?</h2>
+          <div class="options">
+            <button class="option" data-value="love">
+              <span class="option-title">I love them both</span>
+              <span class="option-desc">Then why are you here, Scott?</span>
+            </button>
+            <button class="option" data-value="bored">
+              <span class="option-title">I need something new</span>
+              <span class="option-desc">The GT350 is on engine #3 and you're bored?</span>
+            </button>
+            <button class="option" data-value="more">
+              <span class="option-title">I don't have enough cars</span>
+              <span class="option-desc">There it is</span>
+            </button>
+            <button class="option" data-value="replace">
+              <span class="option-title">One of them has to go</span>
+              <span class="option-desc">We both know nothing is leaving that garage</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="question" data-question="5">
+          <h3 class="q-label">05 — Self-Reflection</h3>
+          <h2 class="q-title">When you buy this car, will it be your last?</h2>
+          <div class="options">
+            <button class="option" data-value="lie1">
+              <span class="option-title">Yes, absolutely</span>
+              <span class="option-desc">You said that about the GT350. And the Type S.</span>
+            </button>
+            <button class="option" data-value="lie2">
+              <span class="option-title">Probably</span>
+              <span class="option-desc">Narrator: It was not.</span>
+            </button>
+            <button class="option" data-value="lie3">
+              <span class="option-title">I'll think about it</span>
+              <span class="option-desc">He will not think about it</span>
+            </button>
+            <button class="option" data-value="truth">
+              <span class="option-title">No</span>
+              <span class="option-desc">Respect</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <div class="config-nav" id="configNav" style="display:none;">
+        <button class="btn btn-ghost" id="prevBtn">Back</button>
+        <button class="btn btn-primary" id="nextBtn">Continue</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULT -->
+  <section id="result" class="result" style="display:none;">
+    <div class="result-inner">
+      <p class="section-eyebrow">Your Configuration Is Complete</p>
+      <h2 class="result-title" id="resultTitle"></h2>
+      <p class="result-tagline" id="resultTagline"></p>
+
+      <div class="result-card">
+        <div class="result-car-name" id="resultCar"></div>
+        <div class="result-specs" id="resultSpecs"></div>
+        <div class="damage-report">
+          <h3>Financial Damage Report</h3>
+          <div class="damage-grid" id="damageGrid"></div>
+          <div class="damage-total">
+            <span>Total Estimated Regret</span>
+            <span class="damage-total-num" id="damageTotal"></span>
+          </div>
+        </div>
+        <div class="instead" id="insteadSection"></div>
+      </div>
+
+      <div class="result-actions">
+        <button class="btn btn-primary" id="reconfigureBtn">Reconfigure (You Will)</button>
+        <button class="btn btn-ghost" id="sendBtn">Send to Scott</button>
       </div>
     </div>
   </section>

@@ -318,7 +318,27 @@
   function init() {
     bindOptionClicks();
     bindNavigation();
+    bindHamburger();
     animateFinancials();
+  }
+
+  // ---- Hamburger Menu ----
+  function bindHamburger() {
+    var hamburger = document.getElementById('hamburger');
+    var navLinks = document.getElementById('navLinks');
+    if (!hamburger || !navLinks) return;
+
+    hamburger.addEventListener('click', function () {
+      hamburger.classList.toggle('open');
+      navLinks.classList.toggle('open');
+    });
+
+    navLinks.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A') {
+        hamburger.classList.remove('open');
+        navLinks.classList.remove('open');
+      }
+    });
   }
 
   // ---- Option Clicks ----
